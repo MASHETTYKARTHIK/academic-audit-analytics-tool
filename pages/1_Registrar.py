@@ -145,3 +145,9 @@ if activity:
     st.dataframe(pd.DataFrame(activity))
 else:
     st.info("No activity yet")
+
+st.divider()
+if st.button("Logout", key="registrar_logout"):
+    st.session_state.user = None
+    st.session_state.role = None
+    st.rerun()

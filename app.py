@@ -62,7 +62,7 @@ if st.session_state.user is None:
                 st.success("Account created. Please go to the Login tab to sign in.")
 else:
     st.success(f"Signed in as {st.session_state.user['username']} ({st.session_state.user['role']})")
-    if st.button("Logout"):
+    if st.button("Logout", key="home_logout_1"):
         st.session_state.user = None
         st.session_state.role = None
         st.rerun()

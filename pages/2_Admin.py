@@ -98,3 +98,9 @@ with st.container(border=True):
         with st.container(border=True):
             st.subheader("Suggestions")
             st.info(suggestion)
+
+st.divider()
+if st.button("Logout", key="admin_logout"):
+    st.session_state.user = None
+    st.session_state.role = None
+    st.rerun()
