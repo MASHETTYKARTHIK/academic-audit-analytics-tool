@@ -20,7 +20,20 @@ st.title("Admin Analytics Dashboard")
 st.markdown(
     """
     <style>
-    .stApp { background: #f7f9fc; }
+    html, body {
+        height: 100%;
+        margin: 0;
+    }
+    [data-testid="stAppViewContainer"] {
+        background-image: linear-gradient(rgba(255,255,255,0.55), rgba(255,255,255,0.55)),
+                          url("https://dfhe5ze0n4pxu.cloudfront.net/College/Background-Images/Background-Image-1767169969170.jpeg");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        min-height: 100vh;
+    }
+    .stApp { background: transparent !important; }
     .st-bd, .st-cf { border-radius: 10px; }
     </style>
     """,

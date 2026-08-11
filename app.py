@@ -15,7 +15,20 @@ st.caption("Registrar-friendly audit entry with role-based analytics and editabl
 st.markdown(
     """
     <style>
-    .stApp { background: #f8fafc; }
+    html, body {
+        height: 100%;
+        margin: 0;
+    }
+    [data-testid="stAppViewContainer"] {
+        background-image: linear-gradient(rgba(255,255,255,0.55), rgba(255,255,255,0.55)),
+                          url("https://dfhe5ze0n4pxu.cloudfront.net/College/Background-Images/Background-Image-1767169969170.jpeg");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        min-height: 100vh;
+    }
+    .stApp { background: transparent !important; }
     .block-container { padding-top: 1.5rem; }
     </style>
     """,
